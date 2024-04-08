@@ -1,0 +1,18 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var basket_1 = require("./basket");
+var soccer_1 = require("./soccer");
+var basketballGame = new basket_1.Basket("Basketball", 5, "United States", "Indoor", 2, "Standard");
+basketballGame.displayBasketballInfo();
+basketballGame.play();
+basketballGame.shoot();
+basketballGame.dribble();
+basketballGame.pass();
+basketballGame.end();
+var soccerGame = new soccer_1.Soccer("Soccer", 11, "England", "Outdoor", "Standard", "Standard");
+soccerGame.displaySoccerInfo();
+soccerGame.play();
+soccerGame.shoot();
+soccerGame.pass();
+soccerGame.tackle();
+soccerGame.end();
